@@ -21,8 +21,8 @@ def add_bashrc() -> None:
         bash.writelines(
             [
                 '\n\nls\n\n',
-                'root="/data/data/com.termux/files"',
-                'custom_py="$root/usr/etc/custom_commands"',
+                'root="/data/data/com.termux/files"\n',
+                'custom_py="$root/usr/etc/custom_commands"\n',
             ]
         )
 
