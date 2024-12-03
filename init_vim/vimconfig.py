@@ -39,10 +39,10 @@ colorscheme poi
 
 
 " auto complete use
-inoremap <silent><expr> <Tab>
-      \\coc#pum#visible() ? coc#_select_confirm() :
-      \\"\\<C-g>u\\<TAB>"
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+inoremap <silent><expr> <Tab> 
+      \\coc#pum#visible() ? coc#_select_confirm() : 
+      \\"\\<C-g>u\\<TAB>" 
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() 
                               \\: "\\<C-g>u\\<CR>\\<c-r>=coc#on_enter()\\<CR>"
 
 " Rust
