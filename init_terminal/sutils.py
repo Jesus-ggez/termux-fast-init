@@ -9,7 +9,7 @@ alias_bash: set = {
 }
 alias_git: set = {
     ('pregh', 'git init && git remote add origin'),
-    ('ingh', 'git add && git commit -m'),
+    ('ingh', 'git add . && git commit -m'),
     ('togh', 'git push -u origin'),
 }
 alias_py: set = {
