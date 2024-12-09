@@ -11,7 +11,7 @@ def main() -> None:
     install_all()
     os.chdir(os.path.expanduser('~'))
     create_vim()
-    os.system('pip install -r req.txt')
+    os.system('pip install -r ~/termux-fast-init/req.txt')
     new_ssh()
 
 

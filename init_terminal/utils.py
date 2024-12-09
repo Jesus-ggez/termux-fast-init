@@ -9,4 +9,5 @@ tools: set = {
     'vim',
     'sqlite',
     'binutils',
+    'openssl'
 }

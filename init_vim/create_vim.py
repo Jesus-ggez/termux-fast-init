@@ -15,8 +15,12 @@ def create_vim() -> None:
         ...
 
     os.chdir('.vim')
-    os.mkdir('colors')
-    os.chdir('colors')
+
+    try:
+        os.mkdir('colors')
+    except:
+        os.chdir('colors')
+
     with open('poi.vim', 'w') as p:
         p.writelines(colorscheme)
 
