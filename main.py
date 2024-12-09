@@ -13,6 +13,7 @@ def main() -> None:
     new_ssh()
     create_vim()
     os.system('pip install -r req.txt')
+    new_ssh()
 
 
 if __name__ == '__main__':
