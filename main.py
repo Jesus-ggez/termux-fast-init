@@ -10,7 +10,6 @@ from init_vim.create_vim import create_vim
 def main() -> None:
     install_all()
     os.chdir(os.path.expanduser('~'))
-    new_ssh()
     create_vim()
     os.system('pip install -r req.txt')
     new_ssh()
