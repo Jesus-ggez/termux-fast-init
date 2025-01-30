@@ -6,14 +6,12 @@ from .add_bashrc import add_bashrc
 
 def install_all() -> None:
     for lang in languages:
-        os.system(f'pkg install {lang} -y')
+        os.system(f'sudo apt install {lang} -y')
 
     for tool in tools:
-        os.system(f'pkg install {tool} -y')
+        os.system(f'sudo apt install {tool} -y')
 
-    os.system('pip install binutils wheel')
     os.chdir(os.path.expanduser('~'))
-    os.chdir('../usr/etc')
     print(os.listdir())
     add_bashrc()
     return
