@@ -10,8 +10,11 @@ def install_all() -> None:
 
     for tool in tools:
         os.system(f'sudo apt install {tool} -y')
+        # os.system(f'pkg install {tool} -y')
 
+    # os.system('pip install binutils wheel')
     os.chdir(os.path.expanduser('~'))
+    # os.chdir('../usr/etc')
     print(os.listdir())
     add_bashrc()
     return
