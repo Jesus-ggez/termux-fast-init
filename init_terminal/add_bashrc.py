@@ -18,9 +18,12 @@ def add_bashrc() -> None:
         'custom_code': alias_custom,
     }
     with open('.bashrc', 'a') as bash:
+    # with open('bash.bashrc', 'a') as bash:
         bash.writelines(
             [
                 '\n\nls\n\n',
+                # 'root="/data/data/com.termux/files"\n',
+                # 'custom_py="$root/usr/etc/custom_commands"\n',
             ]
         )
 
