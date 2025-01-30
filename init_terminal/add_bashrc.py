@@ -17,12 +17,10 @@ def add_bashrc() -> None:
         'rust': alias_rs,
         'custom_code': alias_custom,
     }
-    with open('bash.bashrc', 'a') as bash:
+    with open('.bashrc', 'a') as bash:
         bash.writelines(
             [
                 '\n\nls\n\n',
-                'root="/data/data/com.termux/files"\n',
-                'custom_py="$root/usr/etc/custom_commands"\n',
             ]
         )
 
